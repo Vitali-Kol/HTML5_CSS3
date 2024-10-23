@@ -33,9 +33,8 @@ h1, h2 {
     font: normal 170% 'Century Gothic', Arial;
     margin: 0 0 15px 0;
     padding: 15px 0 5px 0;
-color: #000;
+    color: #000;
 }
-
 
 h2 {
     font-size: 140%;
@@ -53,7 +52,7 @@ ul {
 
 ul li {
     margin: 0 0 6px 0;
-    padding: 0 0 4px 5px; /* Fixed padding value */
+    padding: 0 0 4px 5px;
     line-height: 1.5em;
 }
 
@@ -61,12 +60,8 @@ ul li {
     background-color: darkslateblue;
     height: 177px;
     font-size: 0.8em;
-    margin-left: 0;
-    margin-right: 0;
     min-width: 900px;
 }
-
-
 
 .main, .logo, .menubar, .site_content, .footer {
     margin-left: auto;
@@ -79,8 +74,8 @@ ul li {
 }
 
 .logo h1, .logo h2 {
-    font: normal 300% 'Century Gothic', Arial, sans-serif; /* Capitalized font name */
-    margin: 0 0 0 9px; /* Fixed margin value */
+    font: normal 300% 'Century Gothic', Arial, sans-serif;
+    margin: 0 0 0 9px;
 }
 
 .logo_text h1, .logo_text h1 a, .logo_text h1 a:hover {
@@ -95,6 +90,7 @@ ul li {
     padding: 4px 0 0 0;
     color: #999;
 }
+
 .menubar {
     width: 900px;
     height: 46px;
@@ -106,13 +102,13 @@ ul.menu {
 
 ul.menu li {
     float: left;
-    padding: 0 0 0 9px; /* Fixed padding value */
+    padding: 0 0 0 9px;
     list-style: none;
     margin: 1px 2px 0 0;
 }
 
 ul.menu li a {
-    font: normal 100% 'Trebuchet MS', sans-serif; /* Capitalized font name */
+    font: normal 100% 'Trebuchet MS', sans-serif;
     display: block;
     height: 20px;
     padding: 6px 35px 5px 28px;
@@ -123,6 +119,7 @@ ul.menu li a {
 ul.menu li.selected a {
     color: #aeb002;
 }
+
 ul.menu li a:hover {
     color: #e4ec04;
 }
@@ -139,7 +136,7 @@ hr {
 }
 
 .sidebar_container {
-    float: right; /* Removed extra semicolon */
+    float: right;
     width: 224px;
 }
 
@@ -152,6 +149,7 @@ hr {
     border-radius: 5px;
     background-color: #f9f9f9;
 }
+
 .btn {
     padding: 8px;
     background-color: white;
@@ -174,16 +172,17 @@ hr {
 
 .sidebar ul li {
     list-style-type: none;
-    margin: 0; /* Fixed margin value */
+    margin: 0;
 }
 
-.sidebar .rating_sidebar { /* Added a dot for the class */
+.sidebar .rating_sidebar {
     float: right;
 }
+
 .content {
     text-align: left;
     width: 620px;
-    padding: 0 0 0 5px; /* Fixed padding value */
+    padding: 0 0 0 5px;
     float: left;
 }
 
@@ -269,6 +268,7 @@ hr {
     width: 624px;
     height: 200px;
 }
+
 .send input[type="submit"] {
     background-color: #7268AD;
     padding: 3%;
@@ -298,6 +298,7 @@ hr {
     border: solid 5px #dad7d5;
     width: 25%;
 }
+
 .info_show img {
     float: left;
     margin-right: 2%;
@@ -306,7 +307,7 @@ hr {
     width: 25%;
 }
 
-.info_show{
+.info_show {
     margin-bottom: 5%;
     background-color: #f9f9f9;
     padding: 5%;
@@ -337,6 +338,7 @@ td {
     padding: 2%;
     border: solid 1px #f4f4f4;
 }
+
 td img {
     width: 60px;
     vertical-align: middle;
@@ -357,8 +359,6 @@ td img {
     text-align: center;
     background-color: darkslateblue;
     color: #a8aa94;
-    margin-left: 0px;
-    margin-right: 0px;
     min-width: 900px;
 }
 
