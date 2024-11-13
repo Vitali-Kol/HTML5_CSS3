@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Bootstrap 4</title>
 
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
@@ -14,7 +15,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <form novalidate>
+        <form class="myForm" novalidate>
           <div class="form-group row">
             <label class="col-3" for="exampleInputEmail1">Email адрес</label>
             <input type="email" class="form-control col-9" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email адрес" required>
@@ -44,12 +45,12 @@
               <div class="invalid-tooltip">это обязательно выбрать</div>
             </div>
             <div class="custom-control custom-radio">
-              <input type="radio" name="customForm" class="custom-control-input" required id="custom2">
+              <input type="radio" name="customform" class="custom-control-input" required id="custom2">
               <label for="custom2" class="custom-control-label">Выберите меня</label>
               <div class="invalid-tooltip">это обязательно выбрать</div>
             </div>
             <div class="custom-control custom-radio">
-              <input type="radio" name="customForm" class="custom-control-input" required id="custom3">
+              <input type="radio" name="customform" class="custom-control-input" required id="custom3">
               <label for="custom3" class="custom-control-label">Выберите меня</label>
               <div class="invalid-tooltip">это обязательно выбрать</div>
             </div>
@@ -104,24 +105,65 @@
     </div>
   </div>
 
-  <h3>Кнопки</h3>
+  <h3>Коллапс</h3>
+  <div class="container">
+	<div class="row">
+	  <div class="col-12">
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-controls="collapseExample1">1</button>
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-controls="collapseExample2">2</button>
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".collaple" aria-controls="collapseExample1 collapseExample2">1,2</button>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col">
+		<div class="collaple" id="collapseExample1">
+		  <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+		</div>
+		<div class="collaple" id="collapseExample2">
+		  <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+  <h3>Лист групп</h3>
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-controls="collapseExample1">1</button>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-controls="collapseExample2">2</button>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".collapseExample1_2" aria-controls="collapseExample1_2">1,2</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col">
-      <div class="collapse" id="collapseExample1">
-        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-      </div>
-      <div class="collapse" id="collapseExample2">
-        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+        <div class="row">
+          <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-success active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
+                <span class="badge badge-primary">25</span> Home
+              </a>
+              <a class="list-group-item list-group-item-success" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                <span class="badge badge-primary">25</span> Profile
+              </a>
+              <a class="list-group-item list-group-item-success" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
+                <span class="badge badge-primary">25</span> Messages
+              </a>
+              <a class="list-group-item list-group-item-success" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
+                <span class="badge badge-primary">25</span> Settings
+              </a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo consequuntur fugit, repellat. Et, voluptates, error.
+              </div>
+              <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recusandae aliquam aperiam exercitationem.
+              </div>
+              <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Saepe porro veniam rem excepturi autem inventore nobis ipsum labore libero praesentium.
+              </div>
+              <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Omnis unde, incidunt voluptate est cum sunt autem nisi quod laborum repellat.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -130,34 +172,38 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="accordion" id="accordionExample">
+        <div class="accordion"></div>
           <div class="card">
             <div class="card-header" id="headingOne">
               <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Heading 1</button>
             </div>
-            <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="card-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Officiis ea harum repellendus quis a rerum numquam fuga, beatae sint, repellat omnis placeat possimus incidunt, optio consectetur perspiciatis adipisci, libero velit.</p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Officiis ea harum repellendus quis a rerum numquam fuga, beatae sint, repellat omnis placeat possimus incidunt, optio consectetur perspiciatis adipisci, libero velit.
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-header" id="headingTwo">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Heading 2</button>
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Heading 2
+              </button>
             </div>
-            <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
               <div class="card-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Alias accusantium aperiam repudiandae delectus, ea non quos. Labore perferendis neque totam doloribus, nisi amet facilis distinctio laborum modi, optio, asperiores quos!</p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Alias accusantium aperiam repudiandae delectus, ea non quos. Labore perferendis neque totam doloribus, nisi amet facilis distinctio laborum modi, optio, asperiores quos!
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-header" id="headingThree">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Heading 3</button>
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Heading 3
+              </button>
             </div>
-            <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
               <div class="card-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deserunt fugit facilis vel quas praesentium adipisci vero dolor magnam nostrum tenetur nam, eaque officiis ratione eligendi harum fugiat voluptatem minima et.</p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deserunt fugit facilis vel quas praesentium adipisci vero dolor magnam nostrum tenetur nam, eaque officiis ratione eligendi harum fugiat voluptatem minima et.
               </div>
             </div>
           </div>
@@ -192,9 +238,10 @@
     </div>
   </div>
 
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9pnd5DvbjRIEA0ZwGURftG2Sd9nm7toS6cV4M" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
