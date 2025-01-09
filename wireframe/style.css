@@ -62,19 +62,21 @@
   .hero {
     position: relative;
     width: 100%;
-    max-height: 600px;
+    max-height: 850px; /* Ограничиваем высоту */
     overflow: hidden;
-    margin-bottom: 20px;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(17,17,17,1));
+    margin: 0 auto;
+    padding: 25px 20px; /* Отступы справа и слева */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(17, 17, 17, 1));
   }
   
   .hero__image {
     width: 100%;
     display: block;
     object-fit: cover;
-    opacity: 0.8;
+    opacity: 0.8; /* чуть затемним */
     transition: opacity 0.3s;
   }
+
   .hero__image:hover {
     opacity: 1;
   }
@@ -85,15 +87,15 @@
   .video {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 15px; /* Убираем лишние отступы */
   }
   
   .video__container video {
-    max-width: 800px;
-    width: 100%;
-    border: 2px solid #333;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    max-width: 125%; /* Делаем видео на всю ширину */
+    height: auto; /* Автоматически высчитываем высоту */
+    border: none; /* Убираем рамки */
+    border-radius: 8px; /* Опционально: немного скругляем углы */
+    box-shadow: 0 0 10px rgba(0,0,0,0.6); /* Лёгкая тень */
   }
   
   /* ---------------------------------------------
@@ -373,24 +375,37 @@
     color: #ccc;
     padding: 10px 20px;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.7);
-  }
-  
-  .footer__menu,
-  .footer__social {
+}
+
+.footer__menu,
+.footer__social {
     display: flex;
     gap: 15px;
-  }
-  
-  .footer__menu a,
-  .footer__social a {
+}
+
+.footer__menu a,
+.footer__social a {
     color: #ccc;
     text-decoration: none;
     transition: color 0.3s;
-  }
-  .footer__menu a:hover,
-  .footer__social a:hover {
+}
+
+/* Иконки социальных сетей */
+.footer__social a img {
+    width: 30px; /* Размер иконки */
+    height: 30px;
+    transition: transform 0.3s ease; /* Анимация при наведении */
+}
+
+/* Ховер-эффект на ссылках и иконках */
+.footer__menu a:hover,
+.footer__social a:hover {
     color: #f39c12;
-  }
+}
+
+.footer__social a img:hover {
+    transform: scale(1.1); /* Увеличение иконки при наведении */
+}
   
   /* ---------------------------------------------
      АДАПТАЦИЯ (max-width: 768px)
@@ -446,7 +461,7 @@
     }
 
     .benefits__item {
-        flex: 0 0 100%;
+        flex: 0 0 94.5%;
       }
   
     /* Кнопки-стрелки (видны только на мобильных) */
