@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GTA 5 Landing Page</title>
+  <!-- Подключаем внешний файл стилей -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Шапка сайта (Header) -->
+  <header class="header">
+    <div class="header__logo">
+      <!-- Заранее позаботьтесь, чтобы изображение gta5logo.png существовало в папке -->
+      <img src="gta5logo.png" alt="Game Logo" />
+      <span class="header__tagline">Grand Theft Auto V</span>
+    </div>
+    <button class="header__login-btn">Войти</button>
+  </header>
+
+  <!-- Основной блок (Hero) -->
+  <section class="hero">
+    <img
+      src="gtav123.jpg"
+      alt="Hero Image"
+      class="hero__image"
+    />
+  </section>
+
+  <!-- Видео или трейлер -->
+  <section class="video">
+    <div class="video__container">
+      <video controls poster="gta5preview.jpg">
+        <source src="GTAV-trailer.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+      </video>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <h2>Преимущества</h2>
+  
+    <!-- Радиокнопки (по количеству слайдов) -->
+    <input type="radio" name="benefit" id="b-1" checked>
+    <input type="radio" name="benefit" id="b-2">
+    <input type="radio" name="benefit" id="b-3">
+  
+    <!-- Внешний контейнер для слайдера и стрелок -->
+    <div class="benefits__slider-container">
+      <!-- Контейнер со слайдами -->
+      <div class="benefits__slider">
+        <!-- Слайд 1 -->
+        <div class="benefits__item">
+          <h3>Огромный открытый мир</h3>
+          <p>Игрокам доступен масштабный и детализированный мир Лос-Сантоса и его окрестностей, который можно исследовать пешком, на транспорте, в воздухе или даже под водой. Этот мир наполнен жизнью, активностями и сюрпризами.</p>
+        </div>
+        <!-- Слайд 2 -->
+        <div class="benefits__item">
+          <h3>Уникальный сюжет с тремя героями</h3>
+          <p>Впервые в серии GTA игрок может переключаться между тремя персонажами: Майклом, Франклином и Тревором. У каждого из них своя история, характер и уникальные способности, что делает прохождение сюжета захватывающим.</p>
+        </div>
+        <!-- Слайд 3 -->
+        <div class="benefits__item">
+          <h3>Многопользовательский режим (GTA Online)</h3>
+          <p>GTA Online предоставляет бесконечные возможности для игры с друзьями: совместные ограбления, гонки, создание собственного бизнеса, PvP-сражения и даже тематические события.</p>
+        </div>
+      </div>
+  
+      <!-- Кнопки (стрелки), как у testimonials -->
+      <!-- Для слайда 1 (b-1) -->
+      <label for="b-3" class="benefits__button benefits__button--prev btn-b1">&lt;</label>
+      <label for="b-2" class="benefits__button benefits__button--next btn-b1">&gt;</label>
+  
+      <!-- Для слайда 2 (b-2) -->
+      <label for="b-1" class="benefits__button benefits__button--prev btn-b2">&lt;</label>
+      <label for="b-3" class="benefits__button benefits__button--next btn-b2">&gt;</label>
+  
+      <!-- Для слайда 3 (b-3) -->
+      <label for="b-2" class="benefits__button benefits__button--prev btn-b3">&lt;</label>
+      <label for="b-1" class="benefits__button benefits__button--next btn-b3">&gt;</label>
+    </div>
+  </section>
+
+  <!-- Отзывы (слайдер на чистом CSS) -->
+  <section class="testimonials">
+    <h2>Отзывы</h2>
+    
+    <!-- Радиокнопки (по количеству слайдов) -->
+    <input type="radio" name="testimonial" id="t-1" checked>
+    <input type="radio" name="testimonial" id="t-2">
+    <input type="radio" name="testimonial" id="t-3">
+
+    <!-- Внешний контейнер для слайдера и стрелок -->
+    <div class="testimonials__slider-container">
+      <!-- Контейнер со слайдами -->
+      <div class="testimonials__slider">
+        <!-- Слайд 1 -->
+        <div class="testimonials__item">
+          <img src="shrek.jpg" alt="Avatar 1" />
+          <p>«Игра потрясающая, провёл в ней уже сотни часов!»</p>
+        </div>
+        <!-- Слайд 2 -->
+        <div class="testimonials__item">
+          <img src="shrek2.jpg" alt="Avatar 2" />
+          <p>«Самый захватывающий сюжет и отличная графика!»</p>
+        </div>
+        <!-- Слайд 3 -->
+        <div class="testimonials__item">
+          <img src="shrek3.jpg" alt="Avatar 3" />
+          <p>«Наконец-то появилось, что действительно удивляет!»</p>
+        </div>
+      </div>
+      
+      <!-- Кнопки (стрелки) -->
+      <!-- Для слайда 1 -->
+      <label for="t-3" class="testimonials__button testimonials__button--prev btn-1">&lt;</label>
+      <label for="t-2" class="testimonials__button testimonials__button--next btn-1">&gt;</label>
+      
+      <!-- Для слайда 2 -->
+      <label for="t-1" class="testimonials__button testimonials__button--prev btn-2">&lt;</label>
+      <label for="t-3" class="testimonials__button testimonials__button--next btn-2">&gt;</label>
+      
+      <!-- Для слайда 3 -->
+      <label for="t-2" class="testimonials__button testimonials__button--prev btn-3">&lt;</label>
+      <label for="t-1" class="testimonials__button testimonials__button--next btn-3">&gt;</label>
+    </div>
+  </section>
+
+  <!-- Особенности (3 блока) -->
+  <section class="features">
+    <h2>Особенности</h2>
+    <div class="features__items">
+      <div class="features__item">
+        <h3>Ограбления как основа сюжета</h3>
+        <p>Захватывающие ограбления – это ключевой элемент сюжета. Игроку предстоит планировать операции, выбирать подходы (тихие или силовые) и распределять роли между участниками.</p>
+      </div>
+      <div class="features__item">
+        <h3>Реалистичная физика и механики</h3>
+        <p>Автомобильная физика с разрушаемыми машинами.  
+           Реалистичная баллистика оружия.  
+           Учитываются погодные условия и время суток.</p>
+      </div>
+      <div class="features__item">
+        <h3>Большой выбор транспорта</h3>
+        <p>Более 200 видов транспорта, включая:  
+           Автомобили (от бюджетных до суперкаров),  
+           Мотоциклы, вертолёты, самолёты, лодки и даже спецтехнику.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Блок подписки (Sign up) -->
+  <section class="signup">
+    <h2>Присоединяйтесь и начните играть!</h2>
+    <form class="signup__form">
+      <input type="email" placeholder="Ваш Email" required />
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+  </section>
+
+  <!-- Подвал (Footer) -->
+  <footer class="footer">
+    <nav class="footer__menu">
+      <a href="#">Главная</a>
+      <a href="#">О нас</a>
+      <a href="#">Контакты</a>
+    </nav>
+    <div class="footer__social">
+      <a href="#" target="_blank">
+        <img src="vk-icon.png" alt="VK" class="footer__icon">
+      </a>
+      <a href="#" target="_blank">
+        <img src="instagram-icon.png" alt="Instagram" class="footer__icon">
+      </a>
+      <a href="#" target="_blank">
+        <img src="youtube-icon.png" alt="YouTube" class="footer__icon">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
